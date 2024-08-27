@@ -4,7 +4,7 @@ load_dotenv()
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-# 加载Qwen-5B的分词器和模型
+# 加载Qwen-0.5B的分词器和模型
 model_name = "Qwen/Qwen2-0.5B-Instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(model_name)
